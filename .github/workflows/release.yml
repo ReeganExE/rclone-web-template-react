@@ -1,0 +1,22 @@
+name: Build
+jobs:
+  Build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build
+        run: |
+          git tag v1.${{ github.run_id }}
+          npm ci
+          npm run build
+      - uses: ncipollo/release-action@v1
+        with:
+          tag: v1.${{ github.run_id }}
+          artifacts: "build/index.html"
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - src/**
