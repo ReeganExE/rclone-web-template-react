@@ -1,14 +1,56 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import { useRef, useState } from 'react';
+
 function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <p>rclone web</p>
+        <form>
+          <fieldset>
+            <legend>Options</legend>
+            <label>
+              <input type='checkbox' />
+              <span>Sort folder</span>
+            </label>
+          </fieldset>
+        </form>
       </header>
       <div>
+        <FilterForm />
         <TableList />
       </div>
     </div>
   );
+
+  function FilterForm() {
+    const [term, setTerm] = useState<string>();
+    const inputRef = useRef<HTMLInputElement>(null)
+    return (
+      <div className='filter-wrapper'>
+        <form>
+          <input
+            ref={inputRef}
+            autoFocus
+            type='text'
+            placeholder='Filter'
+            id='filter'
+            value={term}
+            onChange={(e) => setTerm(e.target.value)}
+          />
+          <a
+            href='#'
+            onClick={(e) => {
+              e.preventDefault();
+              setTerm('');
+              inputRef.current?.focus()
+            }}
+          >
+            Clear filter
+          </a>
+        </form>
+      </div>
+    );
+  }
 }
 
 function TableList() {
