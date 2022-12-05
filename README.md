@@ -3,17 +3,17 @@
 > Render rclone HTTP web page as your own design with React
 
 ```
-rclone serve http --template index.html drive:/path
+rclone serve http --template template.html drive:/path
 ```
 
 ## Usage
 
-Download the latest template `index.html` from [releases](https://github.com/ReeganExE/rclone-web-template-react/releases/latest).
+Download the latest template `template.html` from [releases](https://github.com/ReeganExE/rclone-web-template-react/releases/latest).
 
 Then start `rclone` with:
 
 ```
-rclone serve http --template index.html drive:/path
+rclone serve http --template template.html drive:/path
 ```
 
 

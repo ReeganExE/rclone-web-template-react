@@ -11,10 +11,11 @@ jobs:
           npm ci
           bash patch.sh
           npm run build
+          mv build/index.html build/template.html
       - uses: ncipollo/release-action@v1
         with:
           tag: v1.${{ github.run_id }}
-          artifacts: "build/index.html"
+          artifacts: "build/template.html"
 on:
   push:
     branches:
