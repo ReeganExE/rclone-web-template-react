@@ -4,17 +4,6 @@ import { useRef, useState } from 'react';
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <form>
-          <fieldset>
-            <legend>Options</legend>
-            <label>
-              <input type='checkbox' />
-              <span>Sort folder</span>
-            </label>
-          </fieldset>
-        </form>
-      </header>
       <div>
         <FilterForm />
         <TableList />
@@ -24,7 +13,7 @@ function App() {
 
   function FilterForm() {
     const [term, setTerm] = useState<string>();
-    const inputRef = useRef<HTMLInputElement>(null)
+    const inputRef = useRef<HTMLInputElement>(null);
     return (
       <div className='filter-wrapper'>
         <form>
@@ -42,7 +31,7 @@ function App() {
             onClick={(e) => {
               e.preventDefault();
               setTerm('');
-              inputRef.current?.focus()
+              inputRef.current?.focus();
             }}
           >
             Clear filter
@@ -60,6 +49,7 @@ function TableList() {
         <tr>
           <th>#</th>
           <th>Name</th>
+          <th>Actions</th>
           <th>Size</th>
           <th>Modified</th>
         </tr>
@@ -72,11 +62,12 @@ function TableList() {
           </td>
           <td></td>
           <td></td>
+          <td></td>
         </tr>
         {window.items.map((item, idx) => (
           <tr key={item.url}>
             <td>{idx + 1}</td>
-            <td>
+            <td className='name-cell'>
               <Icon item={item} />
               <span className='name'>
                 <a
@@ -94,6 +85,23 @@ function TableList() {
                 </a>
               </span>
             </td>
+            <td className='actions'>
+              {item.isDir ? null : (
+                <div id='actions-wrapper'>
+                  <a href='#'>
+                    <img
+                      alt='Open with IINA'
+                      title='Open with IINA'
+                      width={24}
+                      src='https://iina.io/images/iina-icon-60.png'
+                    />
+                  </a>
+                  <a href={item.url}>
+                    <i className='fa-sharp fa-solid fa-download'></i>
+                  </a>
+                </div>
+              )}
+            </td>
             <td>{item.isDir ? '--' : readableFileSize(item.size)}</td>
             <td>{item.modTime}</td>
           </tr>
@@ -106,7 +114,7 @@ function TableList() {
 function Icon({ item }: { item: RCloneItem }) {
   return (
     <span>
-      <svg width='1.5em' height='1em' version='1.1' viewBox='0 0 317 259'>
+      <svg width='1rem' height='1.2rem' version='1.1' viewBox='0 0 317 259'>
         <use xlinkHref={item.isDir ? '#folder' : '#file'}></use>
       </svg>
     </span>
