@@ -9,6 +9,7 @@ jobs:
         run: |
           git tag v1.${{ github.run_id }}
           npm ci
+          bash patch.sh
           npm run build
       - uses: ncipollo/release-action@v1
         with:
@@ -20,3 +21,4 @@ on:
       - main
     paths:
       - src/**
+  workflow_dispatch:
