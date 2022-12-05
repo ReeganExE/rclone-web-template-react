@@ -1,0 +1,111 @@
+if (process.env.NODE_ENV === 'development') {
+  window.items = [
+    {
+      name: 'Top.Gun.Maverick.2022.2160p.WEB-DL.DDP5.1.Atmos.HDR.HEVC-BLUTONiUM.mkv',
+      url: 'Top.Gun.Maverick.2022.2160p.WEB-DL.DDP5.1.Atmos.HDR.HEVC-BLUTONiUM.mkv',
+      isDir: false,
+      modTime: '2022-12-05 08:10:34.88 +0000 UTC',
+      size: '22230958830',
+    },
+    {
+      name: 'Amsterdam.2022.2160p.MA.WEB-DL.DDP5.1.Atmos.HEVC-CM (Vietsub).mkv',
+      url: 'Amsterdam.2022.2160p.MA.WEB-DL.DDP5.1.Atmos.HEVC-CM%20%28Vietsub%29.mkv',
+      isDir: false,
+      modTime: '2022-12-04 16:50:14.361 +0000 UTC',
+      size: '25681872170',
+    },
+    {
+      name: 'Poker.Face.2022.2160p.WEB-DL.x265.10bit.HDR.DDP5.1-NOGRP (Vietsub).mkv',
+      url: 'Poker.Face.2022.2160p.WEB-DL.x265.10bit.HDR.DDP5.1-NOGRP%20%28Vietsub%29.mkv',
+      isDir: false,
+      modTime: '2022-12-04 16:36:51.83 +0000 UTC',
+      size: '10655417529',
+    },
+    {
+      name: 'Good.Night.Oppy.2022.2160p.AMZN.WEB-DL.x265.10bit.HDR10Plus.DDP5.1-BIGDOC(VietSub).mkv',
+      url: 'Good.Night.Oppy.2022.2160p.AMZN.WEB-DL.x265.10bit.HDR10Plus.DDP5.1-BIGDOC%28VietSub%29.mkv',
+      isDir: false,
+      modTime: '2022-12-03 13:57:38.051 +0000 UTC',
+      size: '11921570484',
+    },
+    {
+      name: 'Rogue.One.2016.1080p.BluRay.x264-SPARKS.mkv',
+      url: 'Rogue.One.2016.1080p.BluRay.x264-SPARKS.mkv',
+      isDir: false,
+      modTime: '2022-12-03 06:50:41.348 +0000 UTC',
+      size: '10565482757',
+    },
+    {
+      name: 'Warriors.of.Future.2022.1080p.NF.WEB-DL.DUAL.DDP5.1.H.264-SMURF.mkv',
+      url: 'Warriors.of.Future.2022.1080p.NF.WEB-DL.DUAL.DDP5.1.H.264-SMURF.mkv',
+      isDir: false,
+      modTime: '2022-12-03 04:13:45.804 +0000 UTC',
+      size: '4740727229',
+    },
+    {
+      name: 'Andor (2022)/',
+      url: 'Andor%20%282022%29/',
+      isDir: true,
+      modTime: '2022-12-02 17:31:25.296 +0000 UTC',
+      size: '0',
+    },
+    {
+      name: 'Troll.2022.2160p.WebRip.HDR10.EAC3.Will1869_sub viet.mkv',
+      url: 'Troll.2022.2160p.WebRip.HDR10.EAC3.Will1869_sub%20viet.mkv',
+      isDir: false,
+      modTime: '2022-12-02 09:47:01.265 +0000 UTC',
+      size: '17412172844',
+    },
+    {
+      name: 'Emergency.Declaration.2021.ViE.1080p.BluRay.TrueHD.Atmos.7.1.x265.10bit-ABU-Thuyetminh-Vietsub.mkv',
+      url: 'Emergency.Declaration.2021.ViE.1080p.BluRay.TrueHD.Atmos.7.1.x265.10bit-ABU-Thuyetminh-Vietsub.mkv',
+      isDir: false,
+      modTime: '2022-12-02 05:36:57.133 +0000 UTC',
+      size: '19966230208',
+    },
+    {
+      name: 'Shang.Chi.and.the.Legend.of.the.Ten.Rings.2021.IMAX.2160p.DSNP.WEB-DL.DDP5.1.Atmos.HDR.HEVC-MZABI.mkv',
+      url: 'Shang.Chi.and.the.Legend.of.the.Ten.Rings.2021.IMAX.2160p.DSNP.WEB-DL.DDP5.1.Atmos.HDR.HEVC-MZABI.mkv',
+      isDir: false,
+      modTime: '2022-12-02 05:31:32.193 +0000 UTC',
+      size: '17211798795',
+    },
+    {
+      name: 'Troll.Quy.Nui.Khong.Lo.2022.1080p.NF.WEB-DL.DDP5.1.H.264-ZZN.mkv',
+      url: 'Troll.Quy.Nui.Khong.Lo.2022.1080p.NF.WEB-DL.DDP5.1.H.264-ZZN.mkv',
+      isDir: false,
+      modTime: '2022-12-02 05:25:07.523 +0000 UTC',
+      size: '5651515974',
+    },
+    {
+      name: 'Come.Back.Home.2022.2160p.WEB-DL.H265.DDP5.1-NUMTVv1.mkv',
+      url: 'Come.Back.Home.2022.2160p.WEB-DL.H265.DDP5.1-NUMTVv1.mkv',
+      isDir: false,
+      modTime: '2022-12-01 11:16:12.849 +0000 UTC',
+      size: '12488093393',
+    },
+    {
+      name: 'A.Star.Wars.Story.Rogue.One.2016.2160p.x265.10bit.SDR.AC3.VN.mkv',
+      url: 'A.Star.Wars.Story.Rogue.One.2016.2160p.x265.10bit.SDR.AC3.VN.mkv',
+      isDir: false,
+      modTime: '2022-12-01 11:14:59.998 +0000 UTC',
+      size: '7053774848',
+    },
+    {
+      name: 'Rubber.2010.1080p.BluRay.x265.HEVC.10bit.AAC.5.1-Tigole(VietSub).mkv',
+      url: 'Rubber.2010.1080p.BluRay.x265.HEVC.10bit.AAC.5.1-Tigole%28VietSub%29.mkv',
+      isDir: false,
+      modTime: '2022-12-01 11:11:43.047 +0000 UTC',
+      size: '3792543135',
+    },
+    {
+      name: 'Rogue.One.2016.1080p.BluRay.x264-SPARKS.srt',
+      url: 'Rogue.One.2016.1080p.BluRay.x264-SPARKS.srt',
+      isDir: false,
+      modTime: '2017-05-16 00:42:04 +0000 UTC',
+      size: '121003',
+    },
+  ];
+}
+
+export {}

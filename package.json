@@ -47,6 +47,5 @@
   "license": "AGPL-3.0",
   "bugs": {
     "url": "https://github.com/ReeganExE/rclone-web-template-react/issues"
-  },
-  "homepage": "https://github.com/ReeganExE/rclone-web-template-react#readme"
+  }
 }
